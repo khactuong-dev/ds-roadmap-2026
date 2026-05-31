@@ -96,7 +96,7 @@ export function PhaseDetail({
             >
               <button
                 onClick={onClose}
-                aria-label="Đóng"
+                aria-label="Close"
                 className="absolute right-4 top-4 grid h-9 w-9 place-items-center rounded-xl border border-white/10 bg-white/5 text-ink-soft transition-colors hover:text-ink"
               >
                 <X size={18} />
@@ -129,7 +129,7 @@ export function PhaseDetail({
 
               <div className="mt-4">
                 <div className="mb-1 flex items-center justify-between text-xs text-ink-soft">
-                  <span>Tiến độ của bạn</span>
+                  <span>Your progress</span>
                   <span className="font-mono">{percent}%</span>
                 </div>
                 <ProgressBar value={percent} color={TRACK[phase.color].hex} />
@@ -138,11 +138,11 @@ export function PhaseDetail({
 
             {/* scrollable body */}
             <div className="hide-scrollbar flex-1 space-y-6 overflow-y-auto px-6 py-6">
-              <Block icon={Target} title="Mục tiêu">
+              <Block icon={Target} title="Objective">
                 <p className="text-sm leading-relaxed text-ink-soft">{phase.objective}</p>
               </Block>
 
-              <Block icon={HelpCircle} title="Tại sao học phần này">
+              <Block icon={HelpCircle} title="Why this phase">
                 <p
                   className="rounded-xl border border-white/10 bg-white/[0.03] p-3 text-sm leading-relaxed text-ink-soft"
                   style={{ borderLeft: "3px solid var(--c)" }}
@@ -201,7 +201,7 @@ export function PhaseDetail({
               </Block>
 
               {/* Checklist */}
-              <Block icon={CheckCircle2} title="Checklist hoàn thành">
+              <Block icon={CheckCircle2} title="Completion checklist">
                 <ul className="space-y-1">
                   {phase.checklist.map((item, i) => {
                     const checked = isChecked(phase.id, i);
@@ -230,7 +230,7 @@ export function PhaseDetail({
               </Block>
 
               {/* Courses */}
-              <Block icon={BookOpen} title={`Khóa học đề xuất (${phase.courseIds.length})`}>
+              <Block icon={BookOpen} title={`Recommended courses ()`}>
                 <div className="grid gap-2.5 sm:grid-cols-2">
                   {phase.courseIds.map((id) => {
                     const c = COURSE_BY_ID[id];

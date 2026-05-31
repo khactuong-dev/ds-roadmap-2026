@@ -13,14 +13,14 @@ export function Footer() {
             <span className="font-semibold">Data Science Roadmap 2026</span>
           </div>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink-soft">
-            Một trải nghiệm học tập tương tác, tái cấu trúc từ handbook “Beginner
-            Data Science Roadmap for 2026”. Từ con số 0 đến AI Engineer — với tài
-            liệu chính thống, miễn phí.
+            An interactive learning experience, restructured from the “Beginner
+            Data Science Roadmap for 2026” handbook. From zero to AI Engineer —
+            with official, free resources.
           </p>
         </div>
 
         <div>
-          <h4 className="mb-3 text-sm font-semibold text-ink">Khám phá</h4>
+          <h4 className="mb-3 text-sm font-semibold text-ink">Explore</h4>
           <ul className="grid gap-2 text-sm text-ink-soft">
             {NAV_LINKS.map((l) => (
               <li key={l.href}>
@@ -33,7 +33,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="mb-3 text-sm font-semibold text-ink">Nguồn học chính</h4>
+          <h4 className="mb-3 text-sm font-semibold text-ink">Top resources</h4>
           <ul className="grid gap-2 text-sm text-ink-soft">
             {[
               ["DeepLearning.AI", "https://www.deeplearning.ai/"],
@@ -62,7 +62,7 @@ export function Footer() {
         <p className="mx-auto max-w-7xl px-5 py-5 text-center text-sm font-medium sm:px-8">
           <span className="text-ink-muted">Made with </span>
           <span className="text-rose">♥</span>
-          <span className="text-ink-muted"> · Tặng </span>
+          <span className="text-ink-muted"> · For </span>
           <span className="text-gradient font-semibold">Diệu Vy</span>
           <span className="text-rose"> 💜</span>
         </p>
@@ -70,9 +70,9 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 py-6 text-xs text-ink-muted sm:flex-row sm:px-8">
-          <p>© 2026 DS Roadmap. Học vui & sớm Job Ready 🚀</p>
+          <p>© 2026 DS Roadmap. Happy learning & get job-ready 🚀</p>
           <div className="flex items-center gap-4">
-            <span>Nền tảng trước · AI sau</span>
+            <span>Foundations first · AI later</span>
             <Code2 size={14} />
           </div>
         </div>

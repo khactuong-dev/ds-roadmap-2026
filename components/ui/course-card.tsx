@@ -40,7 +40,7 @@ export function CourseCard({
     >
       {course.featured && (
         <span className="absolute right-3 top-3 inline-flex items-center gap-1 rounded-full bg-amber/15 px-2 py-0.5 text-[10px] font-semibold text-amber">
-          <Star size={10} className="fill-amber" /> Ưu tiên
+          <Star size={10} className="fill-amber" /> Featured
         </span>
       )}
 

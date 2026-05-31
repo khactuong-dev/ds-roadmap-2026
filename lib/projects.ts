@@ -9,14 +9,14 @@ export const PROJECTS: Project[] = [
     color: "amber",
     difficulty: "Beginner",
     objective:
-      "Trả lời câu hỏi mô tả ('chuyện gì đã xảy ra') bằng dữ liệu sạch và biểu đồ rõ ràng.",
+      "Answer descriptive questions ('what happened') with clean data and clear charts.",
     dataset: {
       label: "World Bank Indicators",
       url: "https://data.worldbank.org/indicator",
     },
     tech: ["PostgreSQL", "Excel / Google Sheets", "Power BI", "Tableau"],
-    skills: ["SQL", "Làm sạch dữ liệu", "Storytelling", "BI tools"],
-    deliverables: ["Dashboard tương tác", "Data dictionary", "README"],
+    skills: ["SQL", "Data cleaning", "Storytelling", "BI tools"],
+    deliverables: ["Interactive dashboard", "Data dictionary", "README"],
     repo: { name: "metabase/metabase", url: "https://github.com/metabase/metabase", stars: "47k" },
   },
   {
@@ -27,14 +27,14 @@ export const PROJECTS: Project[] = [
     color: "amber",
     difficulty: "Beginner",
     objective:
-      "Phân tích xu hướng bán hàng, phát hiện bất thường, gợi ý hành động.",
+      "Analyze sales trends, spot anomalies, and recommend actions.",
     dataset: {
       label: "NYC TLC Trip Data",
       url: "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page",
     },
     tech: ["pandas", "Matplotlib / Seaborn", "Streamlit"],
-    skills: ["EDA", "Time series cơ bản", "Visualization", "Communication"],
-    deliverables: ["Streamlit dashboard", "Phân tích mùa vụ", "Brief 1 trang"],
+    skills: ["EDA", "Basic time series", "Visualization", "Communication"],
+    deliverables: ["Streamlit dashboard", "Seasonality analysis", "One-page brief"],
     repo: { name: "streamlit/streamlit", url: "https://github.com/streamlit/streamlit", stars: "45k" },
   },
   {
@@ -44,14 +44,14 @@ export const PROJECTS: Project[] = [
     icon: "Users",
     color: "blue",
     difficulty: "Intermediate",
-    objective: "Phân khúc khách hàng/quốc gia bằng học không giám sát.",
+    objective: "Segment customers/countries with unsupervised learning.",
     dataset: {
       label: "UCI Retail / World Bank WDI",
       url: "https://archive.ics.uci.edu/",
     },
     tech: ["scikit-learn (KMeans, PCA)", "pandas", "Seaborn"],
-    skills: ["Unsupervised ML", "PCA", "Tư duy phân khúc", "Diễn giải kết quả"],
-    deliverables: ["Notebook phân khúc", "Memo diễn giải các cụm"],
+    skills: ["Unsupervised ML", "PCA", "Segmentation thinking", "Interpreting results"],
+    deliverables: ["Segmentation notebook", "Memo interpreting the clusters"],
     repo: { name: "scikit-learn/scikit-learn", url: "https://github.com/scikit-learn/scikit-learn", stars: "66k" },
   },
   {
@@ -62,14 +62,14 @@ export const PROJECTS: Project[] = [
     color: "blue",
     difficulty: "Intermediate",
     objective:
-      "Dự đoán khách hàng rời bỏ, xử lý dữ liệu mất cân bằng, bảo vệ lựa chọn metric.",
+      "Predict customer churn, handle imbalanced data, and defend your metric choice.",
     dataset: {
       label: "Telco Churn (UCI / OpenML)",
       url: "https://www.openml.org/search?type=data",
     },
     tech: ["scikit-learn (logistic, RF, boosting)", "pipeline"],
-    skills: ["Classification", "Xử lý imbalance", "Đánh giá trung thực", "Tránh leakage"],
-    deliverables: ["So sánh ≥3 mô hình", "Memo bảo vệ metric", "Model card"],
+    skills: ["Classification", "Imbalance handling", "Honest evaluation", "Avoiding leakage"],
+    deliverables: ["3+ model comparison", "Metric-defense memo", "Model card"],
     repo: { name: "dmlc/xgboost", url: "https://github.com/dmlc/xgboost", stars: "28k" },
   },
   {
@@ -80,7 +80,7 @@ export const PROJECTS: Project[] = [
     color: "emerald",
     difficulty: "Advanced",
     objective:
-      "Đóng gói mô hình thành dịch vụ người khác gọi được — thể hiện kỹ năng delivery.",
+      "Package a model into a service others can call — show off delivery skills.",
     dataset: {
       label: "Housing Price (OpenML)",
       url: "https://www.openml.org/search?type=data",
@@ -98,14 +98,14 @@ export const PROJECTS: Project[] = [
     color: "pink",
     difficulty: "Advanced",
     objective:
-      "Xây ứng dụng hỏi-đáp thông minh trên tài liệu riêng bằng LLM + RAG.",
+      "Build a smart Q&A app over your own documents using an LLM + RAG.",
     dataset: {
-      label: "Tài liệu của bạn (PDF, docs)",
+      label: "Your own documents (PDF, docs)",
       url: "https://modelcontextprotocol.io/",
     },
     tech: ["LLM API (OpenAI/Anthropic)", "Chroma / pgvector", "LangChain / LangGraph", "Streamlit"],
     skills: ["LLM", "RAG", "Embeddings", "Vector DB", "AI product thinking"],
-    deliverables: ["App RAG chạy được", "Đánh giá chất lượng câu trả lời", "README kiến trúc"],
+    deliverables: ["Working RAG app", "Answer-quality evaluation", "Architecture README"],
     repo: { name: "langchain-ai/langchain", url: "https://github.com/langchain-ai/langchain", stars: "138k" },
   },
 ];
@@ -121,8 +121,8 @@ export const JOURNEY: JourneyStage[] = [
     role: "Beginner",
     level: "Job-Ready",
     difficulty: "⭐⭐",
-    years: "6-12 tháng học",
-    expectation: "Portfolio 3-4 project, pass phỏng vấn entry-level.",
+    years: "6-12 months learning",
+    expectation: "A portfolio of 3-4 projects; pass an entry-level interview.",
     color: "emerald",
   },
   {
@@ -130,8 +130,8 @@ export const JOURNEY: JourneyStage[] = [
     role: "Data Analyst",
     level: "Junior → Mid",
     difficulty: "⭐⭐",
-    years: "0-2 năm",
-    expectation: "SQL/code vững, dashboard & báo cáo, trả lời câu hỏi kinh doanh.",
+    years: "0-2 years",
+    expectation: "Solid SQL/code, dashboards & reports, answering business questions.",
     color: "amber",
   },
   {
@@ -139,8 +139,8 @@ export const JOURNEY: JourneyStage[] = [
     role: "Data Scientist",
     level: "Mid-level",
     difficulty: "⭐⭐⭐",
-    years: "2-4 năm",
-    expectation: "Tự chủ project, mô hình dự đoán, thiết kế thí nghiệm, ra quyết định kỹ thuật.",
+    years: "2-4 years",
+    expectation: "Own projects, build predictive models, design experiments, make technical calls.",
     color: "blue",
   },
   {
@@ -148,8 +148,8 @@ export const JOURNEY: JourneyStage[] = [
     role: "ML Engineer",
     level: "Senior track",
     difficulty: "⭐⭐⭐⭐",
-    years: "4-7 năm",
-    expectation: "Deploy & vận hành mô hình production, thiết kế hệ thống, mentor.",
+    years: "4-7 years",
+    expectation: "Deploy & operate production models, design systems, mentor.",
     color: "purple",
   },
   {
@@ -157,8 +157,8 @@ export const JOURNEY: JourneyStage[] = [
     role: "AI Engineer",
     level: "Lead / Principal",
     difficulty: "⭐⭐⭐⭐⭐",
-    years: "7+ năm",
-    expectation: "Xây sản phẩm AI/LLM, định hướng kỹ thuật toàn đội/tổ chức.",
+    years: "7+ years",
+    expectation: "Build AI/LLM products and set technical direction across the org.",
     color: "pink",
   },
 ];

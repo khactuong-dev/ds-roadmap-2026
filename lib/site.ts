@@ -16,10 +16,10 @@ export const STATS = {
 
 export const NAV_LINKS = [
   { href: "#roadmap", label: "Roadmap" },
-  { href: "#courses", label: "Khóa học" },
-  { href: "#dashboard", label: "Tiến độ" },
+  { href: "#courses", label: "Courses" },
+  { href: "#dashboard", label: "Progress" },
   { href: "#projects", label: "Portfolio" },
-  { href: "#careers", label: "Nghề nghiệp" },
+  { href: "#careers", label: "Careers" },
   { href: "#ai-2026", label: "AI 2026" },
 ];
 
@@ -29,67 +29,67 @@ export const AI_STACK = [
     id: "llm",
     name: "LLM",
     icon: "MessageSquare",
-    desc: "Large Language Models — nền tảng của AI tạo sinh. Hiểu cách hoạt động, prompting, context window và giới hạn.",
+    desc: "Large Language Models — the foundation of generative AI. Learn how they work, prompting, context windows, and limits.",
   },
   {
     id: "rag",
     name: "RAG",
     icon: "Search",
-    desc: "Retrieval-Augmented Generation — kết hợp LLM với dữ liệu riêng của bạn để trả lời chính xác, có nguồn.",
+    desc: "Retrieval-Augmented Generation — combine an LLM with your own data for accurate, sourced answers.",
   },
   {
     id: "vectordb",
     name: "Vector DB",
     icon: "Database",
-    desc: "Lưu & tìm kiếm embeddings theo độ tương đồng. Chroma, pgvector, Pinecone.",
+    desc: "Store & search embeddings by similarity. Chroma, pgvector, Pinecone.",
   },
   {
     id: "langchain",
     name: "LangChain",
     icon: "Link2",
-    desc: "Framework kết nối LLM với công cụ, dữ liệu và bộ nhớ thành ứng dụng hoàn chỉnh.",
+    desc: "A framework that connects LLMs to tools, data, and memory to build full applications.",
   },
   {
     id: "langgraph",
     name: "LangGraph",
     icon: "Workflow",
-    desc: "Xây luồng agent có trạng thái (stateful) — vòng lặp, nhánh, điều phối nhiều bước.",
+    desc: "Build stateful agent flows — loops, branches, and multi-step orchestration.",
   },
   {
     id: "mcp",
     name: "MCP",
     icon: "Plug",
-    desc: "Model Context Protocol — chuẩn mở kết nối AI với công cụ và nguồn dữ liệu.",
+    desc: "Model Context Protocol — an open standard connecting AI to tools and data sources.",
   },
   {
     id: "agents",
     name: "AI Agents",
     icon: "Bot",
-    desc: "Mô hình tự lập kế hoạch và hành động. Biết khi nào NÊN và KHÔNG NÊN dùng.",
+    desc: "Models that plan and act on their own. Know when you SHOULD and SHOULDN'T use them.",
   },
   {
     id: "agentic",
     name: "Agentic AI",
     icon: "Network",
-    desc: "Hệ nhiều agent phối hợp tự chủ — làn sóng nóng nhất nhưng cần nền tảng vững.",
+    desc: "Multi-agent systems collaborating autonomously — the hottest wave, but it needs solid foundations.",
   },
 ];
 
 /** The 3 golden principles from the handbook. */
 export const PRINCIPLES = [
   {
-    title: "Nền tảng trước, AI sau",
-    desc: "Đừng nhảy thẳng vào LLM. Python → SQL → Thống kê → ML → Deploy → rồi mới LLM. Đây là sai lầm phổ biến nhất của người mới năm 2026.",
+    title: "Foundations first, AI later",
+    desc: "Don't jump straight to LLMs. Python → SQL → Statistics → ML → Deploy → then LLMs. This is the most common beginner mistake of 2026.",
     icon: "Layers",
   },
   {
-    title: "Portfolio hoàn thiện > số lượng",
-    desc: "3-4 project xịn đánh bại 10 notebook dở dang. Mỗi project cần: problem statement, data provenance, baseline, evaluation, limitations, hướng dẫn tái lập.",
+    title: "Finished portfolio > quantity",
+    desc: "3-4 polished projects beat 10 half-finished notebooks. Each project needs a problem statement, data provenance, baseline, evaluation, limitations, and reproduction steps.",
     icon: "FolderCheck",
   },
   {
-    title: "Thể hiện kỹ năng delivery",
-    desc: "Năm 2026, biết deploy + đánh giá trung thực + giao tiếp tốt là thứ phân biệt bạn với đám đông. Không chỉ 'fit được mô hình'.",
+    title: "Show your delivery skills",
+    desc: "In 2026, knowing how to deploy + evaluate honestly + communicate well is what sets you apart. Not just 'fitting a model'.",
     icon: "Rocket",
   },
 ];

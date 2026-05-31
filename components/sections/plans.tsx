@@ -33,8 +33,8 @@ export function Plans() {
     <Section id="plans">
       <SectionHeading
         eyebrow="Study Plans"
-        title={<>Chọn <span className="text-gradient">nhịp độ</span> của bạn</>}
-        description="Ba kế hoạch, cùng một thứ tự — chỉ khác tốc độ. Tick từng mốc khi hoàn thành để theo dõi bạn đang đi tới đâu. Tiến độ được lưu trên trình duyệt."
+        title={<>Pick your <span className="text-gradient">pace</span></>}
+        description="Three plans, same order — only the speed differs. Tick each milestone as you finish to track where you are. Progress is saved in your browser."
       />
 
       {/* tabs */}
@@ -57,7 +57,7 @@ export function Plans() {
                 />
               )}
               <span className="relative flex items-center gap-1.5">
-                {p.months} tháng
+                {p.months} mo
                 {p.recommended && <Star size={12} className="fill-current" />}
               </span>
             </button>
@@ -75,9 +75,9 @@ export function Plans() {
         >
           {/* meta */}
           <div className="mb-6 grid gap-3 sm:grid-cols-3">
-            <MetaCard icon={Users} label="Dành cho" value={active.audience} />
-            <MetaCard icon={Clock} label="Cường độ" value={active.hoursPerWeek} />
-            <MetaCard icon={Gauge} label="Tổng thời gian" value={active.totalHours} />
+            <MetaCard icon={Users} label="Best for" value={active.audience} />
+            <MetaCard icon={Clock} label="Intensity" value={active.hoursPerWeek} />
+            <MetaCard icon={Gauge} label="Total time" value={active.totalHours} />
           </div>
 
           {/* progress tracker bar */}
@@ -85,16 +85,16 @@ export function Plans() {
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div className="flex items-center gap-2 text-sm">
                 <span className="font-semibold text-ink">
-                  {next === -1 ? "🎉 Hoàn thành toàn bộ kế hoạch!" : `Tiến độ kế hoạch ${active.months} tháng`}
+                  {next === -1 ? "🎉 Entire plan complete!" : `${active.months}-month plan progress`}
                 </span>
                 <span className="font-mono text-xs text-ink-muted">
-                  {done}/{total} mốc
+                  {done}/{total} milestones
                 </span>
               </div>
               <div className="flex items-center gap-3">
                 {next !== -1 && (
                   <span className="hidden text-xs text-ink-muted sm:inline">
-                    Tiếp theo: <span className="text-indigo">{active.rows[next].label}</span>
+                    Next: <span className="text-indigo">{active.rows[next].label}</span>
                   </span>
                 )}
                 <button
@@ -110,7 +110,7 @@ export function Plans() {
 
           {active.recommended && (
             <div className="mb-6 flex items-center justify-center gap-2 rounded-xl border border-emerald/30 bg-emerald/10 px-4 py-2.5 text-sm text-emerald">
-              <Star size={14} className="fill-current" /> Khuyên dùng — cân bằng nhất giữa tốc độ và xây portfolio thật.
+              <Star size={14} className="fill-current" /> Recommended — the best balance between speed and building a real portfolio.
             </div>
           )}
 
@@ -150,7 +150,7 @@ export function Plans() {
                         </span>
                         {isNext && (
                           <span className="text-[10px] font-bold uppercase tracking-wider text-indigo">
-                            ● Đang học
+                            ● In progress
                           </span>
                         )}
                       </span>

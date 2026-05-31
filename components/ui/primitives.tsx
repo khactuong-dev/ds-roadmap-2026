@@ -35,11 +35,6 @@ const DIFF_TONE: Record<Difficulty, string> = {
 };
 
 export function DifficultyBadge({ level }: { level: Difficulty }) {
-  const vi: Record<Difficulty, string> = {
-    Beginner: "Cơ bản",
-    Intermediate: "Trung cấp",
-    Advanced: "Nâng cao",
-  };
   return (
     <span
       className={cn(
@@ -47,7 +42,7 @@ export function DifficultyBadge({ level }: { level: Difficulty }) {
         DIFF_TONE[level],
       )}
     >
-      {vi[level]}
+      {level}
     </span>
   );
 }
@@ -64,12 +59,12 @@ export function CostBadge({ cost }: { cost: Cost }) {
       )}
     >
       {cost === "Free"
-        ? "Miễn phí"
+        ? "Free"
         : cost === "Free audit"
           ? "Free audit"
           : cost === "Mixed"
             ? "Mixed"
-            : "Trả phí"}
+            : "Paid"}
     </span>
   );
 }

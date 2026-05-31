@@ -50,7 +50,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <Button href="#roadmap" size="md" className="hidden sm:inline-flex">
-            Bắt đầu học
+            Start Learning
           </Button>
           <button
             aria-label="Menu"
@@ -84,7 +84,7 @@ export function Navbar() {
               ))}
               <li className="pt-1">
                 <Button href="#roadmap" className="w-full" onClick={() => setOpen(false)}>
-                  Bắt đầu học
+                  Start Learning
                 </Button>
               </li>
             </ul>

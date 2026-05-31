@@ -11,8 +11,8 @@ export function Journey() {
     <Section id="journey">
       <SectionHeading
         eyebrow="Visual Learning Journey"
-        title={<>Hành trình <span className="text-gradient">thăng tiến</span></>}
-        description="Từ người mới đến chuyên gia. Mỗi cột mốc đi kèm độ khó, thời gian tích lũy và kỳ vọng điển hình của nhà tuyển dụng."
+        title={<>Your <span className="text-gradient">career ladder</span></>}
+        description="From beginner to expert. Each milestone comes with its difficulty, cumulative time, and typical recruiter expectations."
       />
 
       <div className="flex flex-col items-stretch gap-0 lg:flex-row lg:items-stretch">
@@ -46,9 +46,7 @@ export function Journey() {
       </div>
 
       <p className="mx-auto mt-8 max-w-2xl text-center text-xs leading-relaxed text-ink-muted">
-        💡 Với <span className="text-ink-soft">Data Analyst</span> và nhiều vị trí{" "}
-        <span className="text-ink-soft">ML Engineer</span>, portfolio mạnh + kỹ năng thực tế
-        có thể quan trọng hơn bằng cấp. Các vai trò research thường yêu cầu thạc sĩ trở lên.
+        💡 For <span className="text-ink-soft">Data Analyst</span> and many{" "}<span className="text-ink-soft">ML Engineer</span> roles, a strong portfolio + real skills can matter more than a degree. Research roles usually require a master's degree or higher.
       </p>
     </Section>
   );

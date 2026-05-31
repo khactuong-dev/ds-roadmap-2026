@@ -38,7 +38,7 @@ function Ring({ percent }: { percent: number }) {
       </svg>
       <div className="absolute text-center">
         <div className="text-3xl font-bold tracking-tight">{percent}%</div>
-        <div className="text-[11px] text-ink-muted">hoàn thành</div>
+        <div className="text-[11px] text-ink-muted">completed</div>
       </div>
     </div>
   );
@@ -51,8 +51,8 @@ export function Dashboard() {
     <Section id="dashboard">
       <SectionHeading
         eyebrow="Learning Dashboard"
-        title={<>Theo dõi <span className="text-gradient">tiến độ</span> của bạn</>}
-        description="Tick vào checklist trong mỗi phase để cập nhật. Tiến độ được lưu ngay trên trình duyệt của bạn — không cần đăng nhập."
+        title={<>Track your <span className="text-gradient">progress</span></>}
+        description="Tick the checklist inside each phase to update. Your progress is saved right in your browser — no login needed."
       />
 
       <div className="grid gap-6 lg:grid-cols-[360px_1fr]">
@@ -65,15 +65,15 @@ export function Dashboard() {
         >
           <Ring percent={p.hydrated ? p.overallPercent : 0} />
           <div className="mt-6 grid w-full grid-cols-3 gap-3">
-            <Stat icon={CheckCheck} value={p.hydrated ? p.doneItems : 0} label="Mục đã xong" />
-            <Stat icon={Trophy} value={p.hydrated ? p.completedPhases : 0} label="Phase hoàn tất" />
-            <Stat icon={Target} value={PHASES.length} label="Tổng phase" />
+            <Stat icon={CheckCheck} value={p.hydrated ? p.doneItems : 0} label="Items done" />
+            <Stat icon={Trophy} value={p.hydrated ? p.completedPhases : 0} label="Phases done" />
+            <Stat icon={Target} value={PHASES.length} label="Total phases" />
           </div>
           <button
             onClick={p.reset}
             className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-xs font-medium text-ink-soft transition-colors hover:border-rose/40 hover:text-rose"
           >
-            <RotateCcw size={13} /> Đặt lại tiến độ
+            <RotateCcw size={13} /> Reset progress
           </button>
         </motion.div>
 
@@ -81,7 +81,7 @@ export function Dashboard() {
         <div className="glass rounded-[var(--radius-card)] p-6 sm:p-7">
           <div className="mb-5 flex items-center gap-2 text-sm font-semibold text-ink">
             <Flame size={16} className="text-amber" />
-            Tiến độ theo phase
+            Progress by phase
           </div>
           <ul className="grid gap-4 sm:grid-cols-2">
             {PHASES.map((phase) => {

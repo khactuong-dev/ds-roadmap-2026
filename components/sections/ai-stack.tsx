@@ -17,7 +17,7 @@ export function AIStack() {
       <SectionHeading
         eyebrow="AI Engineering 2026"
         title={<>Modern <span className="text-gradient">AI Stack</span></>}
-        description="Làn sóng nóng nhất của thị trường 2026: LLM, RAG, AI Agents. Nhưng đây là phần mở rộng — KHÔNG thay thế nền tảng."
+        description="The hottest wave of the 2026 market: LLMs, RAG, AI Agents. But this is an extension — NOT a replacement for the foundations."
       />
 
       {/* warning banner */}
@@ -29,12 +29,13 @@ export function AIStack() {
         <AlertTriangle size={20} className="mt-0.5 shrink-0 text-rose" />
         <div>
           <p className="flex items-center gap-2 text-sm font-bold text-rose">
-            Advanced — Không dành cho beginner
+            Advanced — not for beginners
           </p>
           <p className="mt-1 text-sm leading-relaxed text-ink-soft">
-            Người mới <strong className="text-ink">tuyệt đối không</strong> học LLM/Agent ngay từ đầu.
-            Bạn chỉ chạm vào đây sau khi đã vững Phase 1-9. Nếu không, bạn sẽ chỉ biết “gọi API”
-            mà không hiểu gì bên dưới — kiểu ứng viên dễ bị loại nhất.
+            Beginners should <strong className="text-ink">never</strong> start with LLMs/agents.
+            You only get here after you&apos;re solid on Phases 1-9. Otherwise you&apos;ll just
+            &ldquo;call an API&rdquo; without understanding what&apos;s underneath — the easiest
+            candidate to reject.
           </p>
         </div>
       </motion.div>
@@ -62,7 +63,7 @@ export function AIStack() {
 
       {/* learn-more courses */}
       <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-        <span className="text-sm text-ink-muted">Khi đã sẵn sàng, bắt đầu với:</span>
+        <span className="text-sm text-ink-muted">When you&apos;re ready, start with:</span>
         {AI_COURSES.map((id) => {
           const c = COURSE_BY_ID[id];
           return c ? (

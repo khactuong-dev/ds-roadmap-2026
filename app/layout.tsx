@@ -17,13 +17,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Data Science Roadmap 2026 — Beginner → AI Engineer",
   description:
-    "Lộ trình học Data Science tương tác 2026: 10 phases, 50+ khóa học miễn phí, 6 portfolio project và 5 hướng nghề nghiệp. Từ con số 0 đến AI Engineer.",
+    "An interactive 2026 Data Science learning roadmap: 10 phases, 50+ free courses, 6 portfolio projects, and 5 career paths. From zero to AI Engineer.",
   keywords: [
     "data science roadmap",
     "machine learning",
     "AI engineer",
-    "lộ trình data science 2026",
-    "học data science",
+    "data science roadmap 2026",
+    "learn data science",
   ],
   authors: [{ name: "DS Roadmap 2026" }],
   openGraph: {
@@ -44,7 +44,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
-      lang="vi"
+      lang="en"
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
       <body>{children}</body>

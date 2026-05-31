@@ -21,8 +21,8 @@ export function Portfolio() {
     <Section id="projects">
       <SectionHeading
         eyebrow="Portfolio Projects"
-        title={<>6 dự án <span className="text-gradient">thực chiến</span></>}
-        description="Quy tắc 2026: 3-4 project hoàn thiện > 10 notebook dở dang. Mỗi project kèm dataset thật + một GitHub repo nổi bật (nhiều sao) đúng stack để bạn học cách triển khai thực tế."
+        title={<>6 real-world <span className="text-gradient">projects</span></>}
+        description="2026 rule: 3-4 polished projects beat 10 half-finished notebooks. Each project comes with a real dataset + a popular (high-star) GitHub repo in the right stack so you can learn real implementations."
       />
 
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -92,7 +92,7 @@ export function Portfolio() {
                   href={proj.repo.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  title={`Repo tham khảo nổi bật: ${proj.repo.name}`}
+                  title={`Featured reference repo: ${proj.repo.name}`}
                   className="group/repo flex items-center gap-2 rounded-lg border border-white/10 bg-white/[0.03] px-2.5 py-2 text-xs transition-colors hover:border-white/25 hover:bg-white/[0.06]"
                 >
                   <GitHubMark size={15} />

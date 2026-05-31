@@ -10,9 +10,9 @@ export function Principles() {
   return (
     <Section id="principles">
       <SectionHeading
-        eyebrow="3 Nguyên tắc vàng"
-        title={<>Ghi nhớ <span className="text-gradient">3 điều</span> này</>}
-        description="Đây là khác biệt giữa người được tuyển và người mãi loay hoay năm 2026."
+        eyebrow="3 Golden Principles"
+        title={<>Remember these <span className="text-gradient">3 things</span></>}
+        description="This is what separates people who get hired from those who keep spinning their wheels in 2026."
       />
 
       <div className="grid gap-5 md:grid-cols-3">
@@ -45,18 +45,18 @@ export function Principles() {
       >
         <div className="absolute inset-0 -z-10 bg-[linear-gradient(120deg,rgba(99,102,241,0.18),rgba(168,85,247,0.14),rgba(34,211,238,0.12))]" />
         <h3 className="text-balance text-2xl font-bold tracking-tight sm:text-3xl">
-          Sẵn sàng cho hành trình của bạn?
+          Ready for your journey?
         </h3>
         <p className="mx-auto mt-3 max-w-xl text-pretty text-ink-soft">
-          Bắt đầu từ Phase 1 hôm nay. Mỗi tuần publish một thứ lên GitHub. Sau 9 tháng,
-          bạn sẽ có portfolio đủ mạnh để apply.
+          Start from Phase 1 today. Publish something to GitHub every week. After 9 months,
+          you&apos;ll have a portfolio strong enough to apply.
         </p>
         <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Button href="#roadmap" size="lg">
-            Mở Roadmap <ArrowRight size={18} />
+            Open Roadmap <ArrowRight size={18} />
           </Button>
           <Button href="#courses" size="lg" variant="outline">
-            Xem khóa học
+            Browse courses
           </Button>
         </div>
       </motion.div>

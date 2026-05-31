@@ -19,8 +19,8 @@ export function Careers() {
     <Section id="careers">
       <SectionHeading
         eyebrow="Career Paths"
-        title={<>Chọn <span className="text-gradient">hướng nghề nghiệp</span></>}
-        description="Phần lõi chung (Phase 1-7) giống nhau cho tất cả. Sự khác biệt nằm ở 1/3 cuối lộ trình. Click để xem kỹ năng, project, thời gian và mức lương tham khảo."
+        title={<>Pick your <span className="text-gradient">career path</span></>}
+        description="The shared core (Phases 1-7) is the same for everyone. The difference is in the last third of the path. Click to see skills, projects, timelines, and reference salaries."
       />
 
       {/* selector cards */}
@@ -96,7 +96,7 @@ export function Careers() {
             <div className="lg:col-span-2 space-y-5">
               <div>
                 <h4 className="mb-2 flex items-center gap-2 text-sm font-semibold">
-                  <Check size={15} style={{ color: "var(--c)" }} /> Kỹ năng ưu tiên
+                  <Check size={15} style={{ color: "var(--c)" }} /> Priority skills
                 </h4>
                 <div className="flex flex-wrap gap-1.5">
                   {active.prioritySkills.map((s) => (
@@ -108,20 +108,20 @@ export function Careers() {
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2">
-                <ListBlock icon={Plus} title="Thêm sau" items={active.later} tone="soft" />
-                <ListBlock icon={Minus} title="Bỏ qua lúc đầu" items={active.skip} tone="mute" />
+                <ListBlock icon={Plus} title="Add later" items={active.later} tone="soft" />
+                <ListBlock icon={Minus} title="Skip at first" items={active.skip} tone="mute" />
               </div>
 
               <div className="rounded-xl border border-white/10 bg-white/[0.03] p-4" style={{ borderLeft: "3px solid var(--c)" }}>
                 <p className="text-xs font-semibold uppercase tracking-wider" style={{ color: "var(--c)" }}>
-                  Kỹ năng quan trọng nhất
+                  Most important skill
                 </p>
                 <p className="mt-1 text-sm text-ink-soft">{active.keySkill}</p>
               </div>
 
               <div>
                 <h4 className="mb-2 flex items-center gap-2 text-sm font-semibold">
-                  <FolderGit2 size={15} style={{ color: "var(--c)" }} /> Portfolio mục tiêu
+                  <FolderGit2 size={15} style={{ color: "var(--c)" }} /> Target portfolio
                 </h4>
                 <p className="text-sm text-ink-soft">{active.portfolio}</p>
                 <div className="mt-3 flex flex-wrap gap-2">
@@ -141,14 +141,14 @@ export function Careers() {
             <div className="space-y-4">
               <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
                 <div className="flex items-center gap-2 text-sm font-semibold">
-                  <Clock3 size={15} style={{ color: "var(--c)" }} /> Thời gian học
+                  <Clock3 size={15} style={{ color: "var(--c)" }} /> Learning time
                 </div>
                 <p className="mt-1 text-lg font-bold">{active.estimatedTime}</p>
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
                 <div className="flex items-center gap-2 text-sm font-semibold">
-                  <Wallet size={15} style={{ color: "var(--c)" }} /> Mức lương (tham khảo)
+                  <Wallet size={15} style={{ color: "var(--c)" }} /> Salary (reference)
                 </div>
                 <dl className="mt-2 space-y-1.5 text-sm">
                   <Row label="VN · Junior" value={active.salary.vnJunior} />
@@ -160,7 +160,7 @@ export function Careers() {
 
               <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
                 <div className="mb-2 flex items-center gap-2 text-sm font-semibold">
-                  <GraduationCap size={15} style={{ color: "var(--c)" }} /> Khóa học gợi ý
+                  <GraduationCap size={15} style={{ color: "var(--c)" }} /> Suggested courses
                 </div>
                 <ul className="space-y-1.5">
                   {active.courseIds.slice(0, 5).map((id) => {

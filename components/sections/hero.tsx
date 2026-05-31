@@ -7,10 +7,10 @@ import { Counter } from "@/components/ui/counter";
 import { STATS } from "@/lib/site";
 
 const stats = [
-  { icon: Clock, value: STATS.durationMonths, suffix: " tháng", label: "Lộ trình tiêu chuẩn" },
-  { icon: BookOpen, value: STATS.totalCourses, suffix: "+", label: "Khóa học tuyển chọn" },
-  { icon: FolderGit2, value: STATS.totalProjects, suffix: "", label: "Portfolio project" },
-  { icon: Layers3, value: STATS.totalPhases, suffix: "", label: "Phase học tập" },
+  { icon: Clock, value: STATS.durationMonths, suffix: " mo", label: "Standard roadmap" },
+  { icon: BookOpen, value: STATS.totalCourses, suffix: "+", label: "Curated courses" },
+  { icon: FolderGit2, value: STATS.totalProjects, suffix: "", label: "Portfolio projects" },
+  { icon: Layers3, value: STATS.totalPhases, suffix: "", label: "Learning phases" },
 ];
 
 const fadeUp = {
@@ -40,7 +40,7 @@ export function Hero() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald opacity-60" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald" />
           </span>
-          Cập nhật cho thị trường tuyển dụng 2026
+          Updated for the 2026 job market
         </motion.div>
 
         <motion.h1
@@ -62,9 +62,9 @@ export function Hero() {
           animate="show"
           className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-ink-soft sm:text-xl"
         >
-          Hành trình học hoàn chỉnh{" "}
-          <span className="text-ink">từ con số 0 đến AI Engineer</span> — 10
-          phase, tài liệu chính thống miễn phí, và portfolio thực chiến.
+          A complete learning journey{" "}
+          <span className="text-ink">from zero to AI Engineer</span> — 10 phases,
+          free official resources, and a real-world portfolio.
         </motion.p>
 
         <motion.div

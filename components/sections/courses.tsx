@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 
 const CATEGORY_LABEL: Record<CourseCategory, string> = {
   Python: "Python",
-  Math: "Toán & Thống kê",
+  Math: "Math & Stats",
   SQL: "SQL",
   Data: "pandas & Viz",
   ML: "Machine Learning",
@@ -24,9 +24,9 @@ const CATEGORY_LABEL: Record<CourseCategory, string> = {
 
 const LEVELS: Difficulty[] = ["Beginner", "Intermediate", "Advanced"];
 const LEVEL_LABEL: Record<Difficulty, string> = {
-  Beginner: "Cơ bản",
-  Intermediate: "Trung cấp",
-  Advanced: "Nâng cao",
+  Beginner: "Beginner",
+  Intermediate: "Intermediate",
+  Advanced: "Advanced",
 };
 
 export function Courses() {
@@ -55,8 +55,8 @@ export function Courses() {
     <Section id="courses">
       <SectionHeading
         eyebrow="Course Catalog"
-        title={<><span className="text-gradient">{COURSES.length}+ khóa học</span> tuyển chọn</>}
-        description="Official docs + 1 khóa có cấu trúc + 1 cuốn sách cho mỗi chủ đề. Ưu tiên: Andrew Ng → DeepLearning.AI → Stanford → Harvard → MIT → Google → Kaggle."
+        title={<><span className="text-gradient">{COURSES.length}+ curated</span> courses</>}
+        description="Official docs + 1 structured course + 1 book per topic. Priority: Andrew Ng → DeepLearning.AI → Stanford → Harvard → MIT → Google → Kaggle."
       />
 
       {/* search + filters */}
@@ -67,7 +67,7 @@ export function Courses() {
             <input
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Tìm khóa học, provider, kỹ năng…"
+              placeholder="Search courses, providers, skills…"
               className="glass w-full rounded-full py-3 pl-11 pr-4 text-sm text-ink outline-none transition-colors placeholder:text-ink-muted focus:border-indigo/50"
             />
           </div>
@@ -86,16 +86,16 @@ export function Courses() {
               />
             </span>
             <input type="checkbox" className="sr-only" checked={freeOnly} onChange={(e) => setFreeOnly(e.target.checked)} />
-            Chỉ miễn phí
+            Free only
           </label>
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
           <span className="inline-flex items-center gap-1.5 text-xs font-medium text-ink-muted">
-            <SlidersHorizontal size={13} /> Chủ đề:
+            <SlidersHorizontal size={13} /> Topic:
           </span>
           <FilterChip active={cat === "all"} onClick={() => setCat("all")}>
-            Tất cả
+            All
           </FilterChip>
           {COURSE_CATEGORIES.map((c) => (
             <FilterChip key={c} active={cat === c} onClick={() => setCat(c)}>
@@ -105,9 +105,9 @@ export function Courses() {
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-xs font-medium text-ink-muted">Cấp độ:</span>
+          <span className="text-xs font-medium text-ink-muted">Level:</span>
           <FilterChip active={level === "all"} onClick={() => setLevel("all")}>
-            Tất cả
+            All
           </FilterChip>
           {LEVELS.map((l) => (
             <FilterChip key={l} active={level === l} onClick={() => setLevel(l)}>
@@ -116,7 +116,7 @@ export function Courses() {
           ))}
 
           <div className="ml-auto flex items-center gap-3 text-xs text-ink-muted">
-            <span>{filtered.length} kết quả</span>
+            <span>{filtered.length} results</span>
             {hasFilters && (
               <button
                 onClick={() => {
@@ -127,7 +127,7 @@ export function Courses() {
                 }}
                 className="inline-flex items-center gap-1 rounded-full border border-white/10 px-2.5 py-1 transition-colors hover:text-ink"
               >
-                <X size={12} /> Xóa lọc
+                <X size={12} /> Clear
               </button>
             )}
           </div>
@@ -154,7 +154,7 @@ export function Courses() {
 
       {filtered.length === 0 && (
         <p className="py-16 text-center text-ink-muted">
-          Không tìm thấy khóa học phù hợp. Thử bỏ bớt bộ lọc.
+          No matching courses. Try removing some filters.
         </p>
       )}
     </Section>

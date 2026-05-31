@@ -91,7 +91,7 @@ function PhaseNode({
         />
       </div>
       <div className={cn("mt-2 flex items-center gap-1 text-xs font-semibold", align === "right" && "md:justify-end")} style={{ color: "var(--c)" }}>
-        Xem chi tiết
+        View details
         <ChevronRight size={13} className="transition-transform group-hover:translate-x-0.5" />
       </div>
     </button>
@@ -107,8 +107,8 @@ export function Roadmap() {
     <Section id="roadmap">
       <SectionHeading
         eyebrow="Interactive Roadmap"
-        title={<>Lộ trình <span className="text-gradient">10 phase</span> · Beginner → AI Engineer</>}
-        description="Học theo thứ tự xếp tầng. Click vào bất kỳ phase nào để xem mục tiêu, kỹ năng, công cụ, khóa học và checklist tương tác."
+        title={<>A <span className="text-gradient">10-phase</span> path · Beginner → AI Engineer</>}
+        description="Learn in a stacked order. Click any phase to see its objective, skills, tools, courses, and an interactive checklist."
       />
 
       {/* view toggle */}
@@ -194,7 +194,7 @@ export function Roadmap() {
                   <h3 className="text-sm font-bold uppercase tracking-wider" style={{ color: "var(--c)" }}>
                     {track.name}
                   </h3>
-                  <span className="text-xs text-ink-muted">· {phases.length} phase</span>
+                  <span className="text-xs text-ink-muted">· {phases.length} {phases.length === 1 ? "phase" : "phases"}</span>
                 </div>
                 <div className="flex flex-wrap items-stretch gap-3">
                   {phases.map((phase, idx) => (
