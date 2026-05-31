@@ -67,12 +67,25 @@ export function Hero() {
           free official resources, and a real-world portfolio.
         </motion.p>
 
-        <motion.div
+        {/* dedication */}
+        <motion.p
           variants={fadeUp}
           custom={3}
           initial="hidden"
           animate="show"
-          className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row"
+          className="mt-7 text-sm font-medium text-ink-muted"
+        >
+          Made with <span className="text-rose">♥</span> for{" "}
+          <span className="text-gradient font-semibold">Diệu Vy</span>
+          <span className="text-rose"> 💜</span>
+        </motion.p>
+
+        <motion.div
+          variants={fadeUp}
+          custom={4}
+          initial="hidden"
+          animate="show"
+          className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row"
         >
           <Button href="#roadmap" size="lg">
             Start Learning
@@ -83,19 +96,6 @@ export function Hero() {
             Explore Roadmap
           </Button>
         </motion.div>
-
-        {/* dedication */}
-        <motion.p
-          variants={fadeUp}
-          custom={4}
-          initial="hidden"
-          animate="show"
-          className="mt-7 text-sm font-medium text-ink-muted"
-        >
-          Made with <span className="text-rose">♥</span> for{" "}
-          <span className="text-gradient font-semibold">Diệu Vy</span>
-          <span className="text-rose"> 💜</span>
-        </motion.p>
 
         {/* stats */}
         <motion.div
