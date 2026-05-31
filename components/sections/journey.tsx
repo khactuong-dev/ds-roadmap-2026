@@ -20,8 +20,7 @@ export function Journey() {
           <div key={stage.id} className="flex flex-col lg:flex-1 lg:flex-row lg:items-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.94 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, margin: "-60px" }}
+              animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.45, delay: i * 0.1 }}
               style={trackVars(stage.color)}
               className="glass relative flex-1 overflow-hidden rounded-2xl p-5 transition-all duration-300 hover:-translate-y-1 hover:border-white/25"

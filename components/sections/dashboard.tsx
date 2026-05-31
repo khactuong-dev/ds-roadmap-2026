@@ -25,8 +25,7 @@ function Ring({ percent }: { percent: number }) {
           strokeLinecap="round"
           strokeDasharray={c}
           initial={{ strokeDashoffset: c }}
-          whileInView={{ strokeDashoffset: offset }}
-          viewport={{ once: true }}
+          animate={{ strokeDashoffset: offset }}
           transition={{ duration: 1.2, ease: "easeOut" }}
         />
         <defs>
@@ -60,8 +59,7 @@ export function Dashboard() {
         {/* overall card */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="glass flex flex-col items-center rounded-[var(--radius-card)] p-7 text-center"
         >

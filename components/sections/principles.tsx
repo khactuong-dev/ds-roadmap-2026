@@ -20,8 +20,7 @@ export function Principles() {
           <motion.div
             key={pr.title}
             initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
             className="glass relative overflow-hidden rounded-[var(--radius-card)] p-6"
           >
@@ -40,8 +39,7 @@ export function Principles() {
       {/* CTA */}
       <motion.div
         initial={{ opacity: 0, scale: 0.97 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
         className="ring-glow relative mt-16 overflow-hidden rounded-[var(--radius-card)] border border-white/10 px-6 py-12 text-center sm:px-12"
       >

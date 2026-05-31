@@ -21,8 +21,7 @@ export function Portfolio() {
           <motion.article
             key={proj.id}
             initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: (i % 3) * 0.08 }}
             style={trackVars(proj.color)}
             className="group glass relative flex flex-col overflow-hidden rounded-[var(--radius-card)] transition-all duration-300 hover:-translate-y-1 hover:border-white/25"

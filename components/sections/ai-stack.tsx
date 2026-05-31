@@ -23,8 +23,7 @@ export function AIStack() {
       {/* warning banner */}
       <motion.div
         initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        animate={{ opacity: 1, y: 0 }}
         className="mx-auto mb-10 flex max-w-3xl items-start gap-3 rounded-2xl border border-rose/30 bg-rose/10 p-4"
       >
         <AlertTriangle size={20} className="mt-0.5 shrink-0 text-rose" />
@@ -45,8 +44,7 @@ export function AIStack() {
           <motion.div
             key={item.id}
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45, delay: (i % 4) * 0.07 }}
             className="group glass relative overflow-hidden rounded-2xl p-5 transition-all duration-300 hover:-translate-y-1 hover:border-pink/30"
           >
