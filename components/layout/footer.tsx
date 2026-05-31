@@ -57,17 +57,6 @@ export function Footer() {
         </div>
       </div>
 
-      {/* dedication */}
-      <div className="border-t border-white/10">
-        <p className="mx-auto max-w-7xl px-5 py-5 text-center text-sm font-medium sm:px-8">
-          <span className="text-ink-muted">Made with </span>
-          <span className="text-rose">♥</span>
-          <span className="text-ink-muted"> · For </span>
-          <span className="text-gradient font-semibold">Diệu Vy</span>
-          <span className="text-rose"> 💜</span>
-        </p>
-      </div>
-
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 py-6 text-xs text-ink-muted sm:flex-row sm:px-8">
           <p>© 2026 DS Roadmap. Happy learning & get job-ready 🚀</p>

@@ -84,10 +84,23 @@ export function Hero() {
           </Button>
         </motion.div>
 
+        {/* dedication */}
+        <motion.p
+          variants={fadeUp}
+          custom={4}
+          initial="hidden"
+          animate="show"
+          className="mt-7 text-sm font-medium text-ink-muted"
+        >
+          Made with <span className="text-rose">♥</span> for{" "}
+          <span className="text-gradient font-semibold">Diệu Vy</span>
+          <span className="text-rose"> 💜</span>
+        </motion.p>
+
         {/* stats */}
         <motion.div
           variants={fadeUp}
-          custom={4}
+          custom={5}
           initial="hidden"
           animate="show"
           className="mx-auto mt-16 grid max-w-3xl grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4"
