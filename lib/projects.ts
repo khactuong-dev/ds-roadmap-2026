@@ -17,6 +17,7 @@ export const PROJECTS: Project[] = [
     tech: ["PostgreSQL", "Excel / Google Sheets", "Power BI", "Tableau"],
     skills: ["SQL", "Làm sạch dữ liệu", "Storytelling", "BI tools"],
     deliverables: ["Dashboard tương tác", "Data dictionary", "README"],
+    repo: { name: "metabase/metabase", url: "https://github.com/metabase/metabase", stars: "47k" },
   },
   {
     id: "pr2",
@@ -34,6 +35,7 @@ export const PROJECTS: Project[] = [
     tech: ["pandas", "Matplotlib / Seaborn", "Streamlit"],
     skills: ["EDA", "Time series cơ bản", "Visualization", "Communication"],
     deliverables: ["Streamlit dashboard", "Phân tích mùa vụ", "Brief 1 trang"],
+    repo: { name: "streamlit/streamlit", url: "https://github.com/streamlit/streamlit", stars: "45k" },
   },
   {
     id: "pr3",
@@ -50,6 +52,7 @@ export const PROJECTS: Project[] = [
     tech: ["scikit-learn (KMeans, PCA)", "pandas", "Seaborn"],
     skills: ["Unsupervised ML", "PCA", "Tư duy phân khúc", "Diễn giải kết quả"],
     deliverables: ["Notebook phân khúc", "Memo diễn giải các cụm"],
+    repo: { name: "scikit-learn/scikit-learn", url: "https://github.com/scikit-learn/scikit-learn", stars: "66k" },
   },
   {
     id: "pr4",
@@ -67,6 +70,7 @@ export const PROJECTS: Project[] = [
     tech: ["scikit-learn (logistic, RF, boosting)", "pipeline"],
     skills: ["Classification", "Xử lý imbalance", "Đánh giá trung thực", "Tránh leakage"],
     deliverables: ["So sánh ≥3 mô hình", "Memo bảo vệ metric", "Model card"],
+    repo: { name: "dmlc/xgboost", url: "https://github.com/dmlc/xgboost", stars: "28k" },
   },
   {
     id: "pr5",
@@ -84,6 +88,7 @@ export const PROJECTS: Project[] = [
     tech: ["FastAPI", "Docker", "MLflow", "DVC"],
     skills: ["MLOps", "Deployment", "Software engineering", "Reproducibility"],
     deliverables: ["FastAPI endpoint", "Dockerfile", "Experiment tracking", "Reproducible repo"],
+    repo: { name: "fastapi/fastapi", url: "https://github.com/fastapi/fastapi", stars: "99k" },
   },
   {
     id: "pr6",
@@ -101,6 +106,7 @@ export const PROJECTS: Project[] = [
     tech: ["LLM API (OpenAI/Anthropic)", "Chroma / pgvector", "LangChain / LangGraph", "Streamlit"],
     skills: ["LLM", "RAG", "Embeddings", "Vector DB", "AI product thinking"],
     deliverables: ["App RAG chạy được", "Đánh giá chất lượng câu trả lời", "README kiến trúc"],
+    repo: { name: "langchain-ai/langchain", url: "https://github.com/langchain-ai/langchain", stars: "138k" },
   },
 ];
 

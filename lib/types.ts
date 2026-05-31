@@ -95,6 +95,8 @@ export interface Project {
   tech: string[];
   skills: string[];
   deliverables: string[];
+  /** Popular high-star GitHub repo to study for this project's stack. */
+  repo: { name: string; url: string; stars: string };
 }
 
 export interface PlanWeek {
